@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Caixa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <h2>Nota Fiscal</h2>
+        <form method="POST" action="processar_pedido.php">
+            <label for="nomeCliente">Nome do Cliente:</label>
+            <input type="text" name="nomeCliente" id="nomeCliente" required>
+ 
+            <label for="produto1">Primeiro Produto:</label>
+            <input type="text" name="produto1" id="produto1" required>
+            <label for="valor1">Valor do Primeiro Produto:</label>
+            <input type="number" name="valor1" id="valor1" step="0.01" required>
+ 
+            <label for="produto2">Segundo Produto:</label>
+            <input type="text" name="produto2" id="produto2" required>
+            <label for="valor2">Valor do Segundo Produto:</label>
+            <input type="number" name="valor2" id="valor2" step="0.01" required>
+ 
+            <label for="valorPago">Valor Pago pelo Cliente:</label>
+            <input type="number" name="valorPago" id="valorPago" step="0.01" required>
+ 
+            <button type="submit">Gerar Nota Fiscal</button>
+        </form>
+    </div>
+</body>
+</html>
